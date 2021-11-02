@@ -1,5 +1,5 @@
 .hidden {
-    display: none;
+    display: none !important;
 }
 * {
     margin: 0px;
@@ -13,6 +13,20 @@
     opacity: 0.8;
 }
 
+#login-div{
+    text-align: center;
+}
+#login-form input::placeholder {
+    color : black;
+}
+#login-form input{
+    background: rgba(0,0,0,0.2);
+    border: 0;
+    border-bottom : 2px solid black;
+    width : 300px;
+    height: 30px;
+    font-size: 1.3em;
+}
 #weather{
     text-align: right;
     height: 20px;
@@ -60,7 +74,7 @@ li button {
 }
 
 #quote{
-    position: absolute;
+    position: fixed;
     bottom:0px;
     padding: 10px;
     font-size: 1em;
